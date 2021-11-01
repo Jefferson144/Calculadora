@@ -6,7 +6,6 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 
 //By Jefferson Narvaez.
-
 public class Calculadora1 extends javax.swing.JFrame {
 
     ScriptEngineManager sem = new ScriptEngineManager();
@@ -15,6 +14,7 @@ public class Calculadora1 extends javax.swing.JFrame {
     public Calculadora1() {
         initComponents();
         setLocationRelativeTo(null);
+        Jpanel_botones.setFocusable(true);
     }
 
     @SuppressWarnings("unchecked")
@@ -44,9 +44,9 @@ public class Calculadora1 extends javax.swing.JFrame {
         btntres = new javax.swing.JButton();
         btncero = new javax.swing.JButton();
         btnpunto = new javax.swing.JButton();
-        btnigual = new javax.swing.JButton();
         btnsalir = new javax.swing.JButton();
         btn_nocturno = new javax.swing.JToggleButton();
+        btnIgual = new javax.swing.JButton();
 
         jButton1.setText("jButton1");
 
@@ -106,6 +106,7 @@ public class Calculadora1 extends javax.swing.JFrame {
 
         btnc.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         btnc.setText("C");
+        btnc.setFocusable(false);
         btnc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btncActionPerformed(evt);
@@ -113,6 +114,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btnce.setText("CE");
+        btnce.setFocusable(false);
         btnce.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnceActionPerformed(evt);
@@ -120,6 +122,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btnexpo.setText("%");
+        btnexpo.setFocusable(false);
         btnexpo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnexpoActionPerformed(evt);
@@ -127,6 +130,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btnmulti.setText("*");
+        btnmulti.setFocusable(false);
         btnmulti.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnmultiActionPerformed(evt);
@@ -134,6 +138,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btnsuma.setText("+");
+        btnsuma.setFocusable(false);
         btnsuma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsumaActionPerformed(evt);
@@ -141,6 +146,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btnresta.setText("-");
+        btnresta.setFocusable(false);
         btnresta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnrestaActionPerformed(evt);
@@ -148,6 +154,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btndivi.setText("/");
+        btndivi.setFocusable(false);
         btndivi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btndiviActionPerformed(evt);
@@ -155,6 +162,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btnsiete.setText("7");
+        btnsiete.setFocusable(false);
         btnsiete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsieteActionPerformed(evt);
@@ -162,6 +170,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btnocho.setText("8");
+        btnocho.setFocusable(false);
         btnocho.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnochoActionPerformed(evt);
@@ -169,6 +178,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btnnueve.setText("9");
+        btnnueve.setFocusable(false);
         btnnueve.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnnueveActionPerformed(evt);
@@ -176,6 +186,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btncuatro.setText("4");
+        btncuatro.setFocusable(false);
         btncuatro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btncuatroActionPerformed(evt);
@@ -183,6 +194,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btncinco.setText("5");
+        btncinco.setFocusable(false);
         btncinco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btncincoActionPerformed(evt);
@@ -190,6 +202,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btnseis.setText("6");
+        btnseis.setFocusable(false);
         btnseis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnseisActionPerformed(evt);
@@ -197,6 +210,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btnuno.setText("1");
+        btnuno.setFocusable(false);
         btnuno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnunoActionPerformed(evt);
@@ -204,6 +218,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btndos.setText("2");
+        btndos.setFocusable(false);
         btndos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btndosActionPerformed(evt);
@@ -211,6 +226,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btntres.setText("3");
+        btntres.setFocusable(false);
         btntres.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btntresActionPerformed(evt);
@@ -218,6 +234,7 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btncero.setText("0");
+        btncero.setFocusable(false);
         btncero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnceroActionPerformed(evt);
@@ -225,22 +242,17 @@ public class Calculadora1 extends javax.swing.JFrame {
         });
 
         btnpunto.setText(".");
+        btnpunto.setFocusable(false);
         btnpunto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnpuntoActionPerformed(evt);
             }
         });
 
-        btnigual.setText("=");
-        btnigual.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnigualActionPerformed(evt);
-            }
-        });
-
         btnsalir.setFont(new java.awt.Font("Segoe UI Black", 0, 11)); // NOI18N
         btnsalir.setForeground(new java.awt.Color(255, 0, 0));
         btnsalir.setText("SALIR");
+        btnsalir.setFocusable(false);
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsalirActionPerformed(evt);
@@ -249,9 +261,18 @@ public class Calculadora1 extends javax.swing.JFrame {
 
         btn_nocturno.setBackground(new java.awt.Color(204, 0, 0));
         btn_nocturno.setText("Nocturno");
+        btn_nocturno.setFocusable(false);
         btn_nocturno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_nocturnoActionPerformed(evt);
+            }
+        });
+
+        btnIgual.setText("=");
+        btnIgual.setFocusable(false);
+        btnIgual.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIgualActionPerformed(evt);
             }
         });
 
@@ -281,29 +302,26 @@ public class Calculadora1 extends javax.swing.JFrame {
                         .addComponent(btnpunto, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(51, 51, 51)
                 .addGroup(Jpanel_botonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Jpanel_botonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(btntres, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnseis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnexpo, javax.swing.GroupLayout.DEFAULT_SIZE, 63, Short.MAX_VALUE)
+                        .addComponent(btnnueve, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
+                .addGroup(Jpanel_botonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Jpanel_botonesLayout.createSequentialGroup()
+                        .addGroup(Jpanel_botonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(Jpanel_botonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(btnmulti, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btndivi, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnsuma, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                        .addComponent(btn_nocturno, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(Jpanel_botonesLayout.createSequentialGroup()
                         .addGroup(Jpanel_botonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btntres, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnseis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnexpo, javax.swing.GroupLayout.DEFAULT_SIZE, 63, Short.MAX_VALUE)
-                            .addComponent(btnnueve, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(57, 57, 57)
-                        .addGroup(Jpanel_botonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(Jpanel_botonesLayout.createSequentialGroup()
-                                .addGroup(Jpanel_botonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(Jpanel_botonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(btnmulti, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btndivi, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(btnsuma, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
-                                .addComponent(btn_nocturno, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(Jpanel_botonesLayout.createSequentialGroup()
-                                .addComponent(btnresta, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap())))
-                    .addGroup(Jpanel_botonesLayout.createSequentialGroup()
-                        .addComponent(btnsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28)
-                        .addComponent(btnigual, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnresta, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+                            .addComponent(btnIgual, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap())))
         );
         Jpanel_botonesLayout.setVerticalGroup(
@@ -347,8 +365,8 @@ public class Calculadora1 extends javax.swing.JFrame {
                 .addGroup(Jpanel_botonesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnpunto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btncero, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnigual, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
-                    .addComponent(btnsalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnsalir, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
+                    .addComponent(btnIgual, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(87, 87, 87))
         );
 
@@ -384,7 +402,7 @@ public class Calculadora1 extends javax.swing.JFrame {
             txtoperacion.setText(txtresultado.getText() + "*" + txtresultado.getText());
             txtresultado.setText("");
         } else {
-        txtoperacion.setText(txtoperacion.getText()+"*"+txtoperacion.getText());
+            txtoperacion.setText(txtoperacion.getText() + "*" + txtoperacion.getText());
         }
     }//GEN-LAST:event_btnexpoActionPerformed
 
@@ -456,37 +474,6 @@ public class Calculadora1 extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_btnsalirActionPerformed
 
-    private void btnigualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnigualActionPerformed
-        if (txtoperacion.getText().contains("+") && txtoperacion.getText().contains("-") || txtoperacion.getText().contains("+") && txtoperacion.getText().contains("*") || txtoperacion.getText().contains("+") && txtoperacion.getText().contains("/") || txtoperacion.getText().contains("+") && txtoperacion.getText().contains("^")) {
-            txtoperacion.setText("Operacion fallo 1");
-            txtresultado.setText("Operacion fallo 1");
-        } else if (txtoperacion.getText().contains("-") && txtoperacion.getText().contains("+") || txtoperacion.getText().contains("-") && txtoperacion.getText().contains("*") || txtoperacion.getText().contains("-") && txtoperacion.getText().contains("/") || txtoperacion.getText().contains("-") && txtoperacion.getText().contains("^")) {
-            txtoperacion.setText("Operacion fallo 2");
-            txtresultado.setText("Operacion fallo 2");
-        } else if (txtoperacion.getText().contains("*") && txtoperacion.getText().contains("+") || txtoperacion.getText().contains("*") && txtoperacion.getText().contains("-") || txtoperacion.getText().contains("*") && txtoperacion.getText().contains("/") || txtoperacion.getText().contains("*") && txtoperacion.getText().contains("^")) {
-            txtoperacion.setText("Operacion fallo 3");
-            txtresultado.setText("Operacion fallo 3");
-        } else if (txtoperacion.getText().contains("/") && txtoperacion.getText().contains("+") || txtoperacion.getText().contains("/") && txtoperacion.getText().contains("-") || txtoperacion.getText().contains("/") && txtoperacion.getText().contains("*") || txtoperacion.getText().contains("/") && txtoperacion.getText().contains("^")) {
-            txtoperacion.setText("Operacion fallo 4");
-            txtresultado.setText("Operacion fallo 4");
-        } else if (txtoperacion.getText().contains("^") && txtoperacion.getText().contains("+") || txtoperacion.getText().contains("^") && txtoperacion.getText().contains("-") || txtoperacion.getText().contains("^") && txtoperacion.getText().contains("*") || txtoperacion.getText().contains("^") && txtoperacion.getText().contains("/")) {
-            txtoperacion.setText("Operacion fallo 5");
-            txtresultado.setText("Operacion fallo 5");
-        }
-
-        try { 
-            String resultado = se.eval(txtoperacion.getText()).toString();
-            if (resultado == null) {
-                txtresultado.setText("Operacion fallo");
-            } else {
-                txtresultado.setText(resultado);
-            }
-        } catch (Exception e) {
-            System.out.print(e);
-        }
-
-    }//GEN-LAST:event_btnigualActionPerformed
-
     private void btn_nocturnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nocturnoActionPerformed
         if (btn_nocturno.isSelected() == true) {
             btn_nocturno.setBackground(Color.GREEN);
@@ -508,16 +495,131 @@ public class Calculadora1 extends javax.swing.JFrame {
     }//GEN-LAST:event_formKeyPressed
 
     private void Jpanel_botonesKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Jpanel_botonesKeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            txtoperacion.setText("0");
-            System.out.println("cumple 1");
+        switch (evt.getExtendedKeyCode()) {
+            case KeyEvent.VK_0:
+                btncero.doClick();
+                break;
+            case KeyEvent.VK_1:
+                btnuno.doClick();
+                break;
+            case KeyEvent.VK_2:
+                btndos.doClick();
+                break;
+            case KeyEvent.VK_3:
+                btntres.doClick();
+                break;
+            case KeyEvent.VK_4:
+                btncuatro.doClick();
+                break;
+            case KeyEvent.VK_5:
+                btncinco.doClick();
+                break;
+            case KeyEvent.VK_6:
+                btnseis.doClick();
+                break;
+            case KeyEvent.VK_7:
+                btnsiete.doClick();
+                break;
+            case KeyEvent.VK_8:
+                btnocho.doClick();
+                break;
+            case KeyEvent.VK_9:
+                btnnueve.doClick();
+                break;
+            case KeyEvent.VK_NUMPAD0:
+                btncero.doClick();
+                break;
+            case KeyEvent.VK_NUMPAD1:
+                btnuno.doClick();
+                break;
+            case KeyEvent.VK_NUMPAD2:
+                btndos.doClick();
+                break;
+            case KeyEvent.VK_NUMPAD3:
+                btntres.doClick();
+                break;
+            case KeyEvent.VK_NUMPAD4:
+                btncuatro.doClick();
+                break;
+            case KeyEvent.VK_NUMPAD5:
+                btncinco.doClick();
+                break;
+            case KeyEvent.VK_NUMPAD6:
+                btnseis.doClick();
+                break;
+            case KeyEvent.VK_NUMPAD7:
+                btnsiete.doClick();
+                break;
+            case KeyEvent.VK_NUMPAD8:
+                btnocho.doClick();
+                break;
+            case KeyEvent.VK_NUMPAD9:
+                btnnueve.doClick();
+                break;
+            case KeyEvent.VK_ESCAPE:
+                btnc.doClick();
+                break;
+            case KeyEvent.VK_ADD:
+                btnsuma.doClick();
+                break;
+            case KeyEvent.VK_ENTER:
+                btnIgual.doClick();
+                break;
+            case KeyEvent.VK_BACK_SPACE:
+                btnce.doClick();
+                break;
+            case KeyEvent.VK_SUBTRACT:
+                btnresta.doClick();
+                break;
+            case KeyEvent.VK_MULTIPLY:
+                btnmulti.doClick();
+                break;
+            case KeyEvent.VK_DIVIDE:
+                btndivi.doClick();
+                break;
+            case KeyEvent.VK_DECIMAL:
+                btnpunto.doClick();
+                break;
+            case KeyEvent.VK_DEAD_ACUTE:
+                btnexpo.doClick();
+                break;
         }
     }//GEN-LAST:event_Jpanel_botonesKeyPressed
 
+    private void btnIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIgualActionPerformed
+        if (txtoperacion.getText().contains("+") && txtoperacion.getText().contains("-") || txtoperacion.getText().contains("+") && txtoperacion.getText().contains("*") || txtoperacion.getText().contains("+") && txtoperacion.getText().contains("/") || txtoperacion.getText().contains("+") && txtoperacion.getText().contains("^")) {
+            txtoperacion.setText("Operacion fallo 1");
+            txtresultado.setText("Operacion fallo 1");
+        } else if (txtoperacion.getText().contains("-") && txtoperacion.getText().contains("+") || txtoperacion.getText().contains("-") && txtoperacion.getText().contains("*") || txtoperacion.getText().contains("-") && txtoperacion.getText().contains("/") || txtoperacion.getText().contains("-") && txtoperacion.getText().contains("^")) {
+            txtoperacion.setText("Operacion fallo 2");
+            txtresultado.setText("Operacion fallo 2");
+        } else if (txtoperacion.getText().contains("*") && txtoperacion.getText().contains("+") || txtoperacion.getText().contains("*") && txtoperacion.getText().contains("-") || txtoperacion.getText().contains("*") && txtoperacion.getText().contains("/") || txtoperacion.getText().contains("*") && txtoperacion.getText().contains("^")) {
+            txtoperacion.setText("Operacion fallo 3");
+            txtresultado.setText("Operacion fallo 3");
+        } else if (txtoperacion.getText().contains("/") && txtoperacion.getText().contains("+") || txtoperacion.getText().contains("/") && txtoperacion.getText().contains("-") || txtoperacion.getText().contains("/") && txtoperacion.getText().contains("*") || txtoperacion.getText().contains("/") && txtoperacion.getText().contains("^")) {
+            txtoperacion.setText("Operacion fallo 4");
+            txtresultado.setText("Operacion fallo 4");
+        } else if (txtoperacion.getText().contains("^") && txtoperacion.getText().contains("+") || txtoperacion.getText().contains("^") && txtoperacion.getText().contains("-") || txtoperacion.getText().contains("^") && txtoperacion.getText().contains("*") || txtoperacion.getText().contains("^") && txtoperacion.getText().contains("/")) {
+            txtoperacion.setText("Operacion fallo 5");
+            txtresultado.setText("Operacion fallo 5");
+        }
+
+        try {
+            String resultado = String.valueOf(se.eval(txtoperacion.getText()));
+            if (resultado == null) {
+                txtresultado.setText("Operacion fallo");
+            } else {
+                txtresultado.setText(resultado);
+            }
+        } catch (Exception e) {
+            System.out.print(e);
+        }
+
+    }//GEN-LAST:event_btnIgualActionPerformed
+
     public void addNumber(String digito) {
-        txtoperacion.setText(txtoperacion.getText()+digito);
+        txtoperacion.setText(txtoperacion.getText() + digito);
     }
-    
 
     /**
      * @param args the command line arguments
@@ -566,6 +668,7 @@ public class Calculadora1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Jpanel_botones;
     private javax.swing.JPanel Jpanel_opera_result;
+    private javax.swing.JButton btnIgual;
     private javax.swing.JToggleButton btn_nocturno;
     private javax.swing.JButton btnc;
     private javax.swing.JButton btnce;
@@ -575,7 +678,6 @@ public class Calculadora1 extends javax.swing.JFrame {
     private javax.swing.JButton btndivi;
     private javax.swing.JButton btndos;
     private javax.swing.JButton btnexpo;
-    private javax.swing.JButton btnigual;
     private javax.swing.JButton btnmulti;
     private javax.swing.JButton btnnueve;
     private javax.swing.JButton btnocho;
@@ -591,4 +693,5 @@ public class Calculadora1 extends javax.swing.JFrame {
     private javax.swing.JLabel txtoperacion;
     private javax.swing.JLabel txtresultado;
     // End of variables declaration//GEN-END:variables
+
 }

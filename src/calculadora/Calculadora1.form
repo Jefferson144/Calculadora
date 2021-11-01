@@ -156,36 +156,32 @@
                   </Group>
                   <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btntres" max="32767" attributes="0"/>
+                          <Component id="btnseis" max="32767" attributes="0"/>
+                          <Component id="btnexpo" pref="63" max="32767" attributes="0"/>
+                          <Component id="btnnueve" max="32767" attributes="0"/>
+                      </Group>
+                      <Component id="btnsalir" alignment="0" min="-2" pref="92" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="btntres" max="32767" attributes="0"/>
-                              <Component id="btnseis" max="32767" attributes="0"/>
-                              <Component id="btnexpo" pref="63" max="32767" attributes="0"/>
-                              <Component id="btnnueve" max="32767" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="57" pref="57" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="btnmulti" alignment="1" min="-2" pref="60" max="-2" attributes="0"/>
-                                          <Component id="btndivi" min="-2" pref="60" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="btnsuma" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace pref="24" max="32767" attributes="0"/>
-                                  <Component id="btn_nocturno" min="-2" pref="83" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="btnmulti" alignment="1" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btndivi" min="-2" pref="60" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="btnresta" min="-2" pref="60" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="btnsuma" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace pref="24" max="32767" attributes="0"/>
+                          <Component id="btn_nocturno" min="-2" pref="83" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
-                          <Component id="btnsalir" min="-2" pref="92" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                          <Component id="btnigual" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="btnresta" pref="60" max="32767" attributes="0"/>
+                              <Component id="btnIgual" max="32767" attributes="0"/>
+                          </Group>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -244,8 +240,8 @@
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="btnpunto" alignment="0" max="32767" attributes="0"/>
                       <Component id="btncero" alignment="0" max="32767" attributes="0"/>
-                      <Component id="btnigual" alignment="0" pref="53" max="32767" attributes="0"/>
-                      <Component id="btnsalir" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnsalir" alignment="0" pref="53" max="32767" attributes="0"/>
+                      <Component id="btnIgual" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
               </Group>
@@ -259,6 +255,7 @@
               <Font name="Segoe UI Black" size="12" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="C"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btncActionPerformed"/>
@@ -267,6 +264,7 @@
         <Component class="javax.swing.JButton" name="btnce">
           <Properties>
             <Property name="text" type="java.lang.String" value="CE"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnceActionPerformed"/>
@@ -275,6 +273,7 @@
         <Component class="javax.swing.JButton" name="btnexpo">
           <Properties>
             <Property name="text" type="java.lang.String" value="%"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnexpoActionPerformed"/>
@@ -283,6 +282,7 @@
         <Component class="javax.swing.JButton" name="btnmulti">
           <Properties>
             <Property name="text" type="java.lang.String" value="*"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnmultiActionPerformed"/>
@@ -291,6 +291,7 @@
         <Component class="javax.swing.JButton" name="btnsuma">
           <Properties>
             <Property name="text" type="java.lang.String" value="+"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnsumaActionPerformed"/>
@@ -299,6 +300,7 @@
         <Component class="javax.swing.JButton" name="btnresta">
           <Properties>
             <Property name="text" type="java.lang.String" value="-"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnrestaActionPerformed"/>
@@ -307,6 +309,7 @@
         <Component class="javax.swing.JButton" name="btndivi">
           <Properties>
             <Property name="text" type="java.lang.String" value="/"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btndiviActionPerformed"/>
@@ -315,6 +318,7 @@
         <Component class="javax.swing.JButton" name="btnsiete">
           <Properties>
             <Property name="text" type="java.lang.String" value="7"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnsieteActionPerformed"/>
@@ -323,6 +327,7 @@
         <Component class="javax.swing.JButton" name="btnocho">
           <Properties>
             <Property name="text" type="java.lang.String" value="8"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnochoActionPerformed"/>
@@ -331,6 +336,7 @@
         <Component class="javax.swing.JButton" name="btnnueve">
           <Properties>
             <Property name="text" type="java.lang.String" value="9"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnnueveActionPerformed"/>
@@ -339,6 +345,7 @@
         <Component class="javax.swing.JButton" name="btncuatro">
           <Properties>
             <Property name="text" type="java.lang.String" value="4"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btncuatroActionPerformed"/>
@@ -347,6 +354,7 @@
         <Component class="javax.swing.JButton" name="btncinco">
           <Properties>
             <Property name="text" type="java.lang.String" value="5"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btncincoActionPerformed"/>
@@ -355,6 +363,7 @@
         <Component class="javax.swing.JButton" name="btnseis">
           <Properties>
             <Property name="text" type="java.lang.String" value="6"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnseisActionPerformed"/>
@@ -363,6 +372,7 @@
         <Component class="javax.swing.JButton" name="btnuno">
           <Properties>
             <Property name="text" type="java.lang.String" value="1"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnunoActionPerformed"/>
@@ -371,6 +381,7 @@
         <Component class="javax.swing.JButton" name="btndos">
           <Properties>
             <Property name="text" type="java.lang.String" value="2"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btndosActionPerformed"/>
@@ -379,6 +390,7 @@
         <Component class="javax.swing.JButton" name="btntres">
           <Properties>
             <Property name="text" type="java.lang.String" value="3"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btntresActionPerformed"/>
@@ -387,6 +399,7 @@
         <Component class="javax.swing.JButton" name="btncero">
           <Properties>
             <Property name="text" type="java.lang.String" value="0"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnceroActionPerformed"/>
@@ -395,17 +408,10 @@
         <Component class="javax.swing.JButton" name="btnpunto">
           <Properties>
             <Property name="text" type="java.lang.String" value="."/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnpuntoActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnigual">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="="/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnigualActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnsalir">
@@ -417,6 +423,7 @@
               <Color blue="0" green="0" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="SALIR"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnsalirActionPerformed"/>
@@ -428,9 +435,19 @@
               <Color blue="0" green="0" red="cc" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Nocturno"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_nocturnoActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnIgual">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="="/>
+            <Property name="focusable" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnIgualActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
